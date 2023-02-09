@@ -4,8 +4,8 @@
     <title>Отбор точечных объектов</title>
     <meta charset="utf-8" />
     <meta name="author" content="Тимофей Самсонов" />
-    <meta name="date" content="2021-09-10" />
-    <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+    <meta name="date" content="2022-02-17" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # Отбор точечных объектов
 ## Генерализация пространственных данных
 ### Тимофей Самсонов
-### 2021-09-10
+### 2022-02-17
 
 ---
 
@@ -263,11 +263,11 @@ _Средняя условная графическая нагрузка_ рас
 
 4. Удалить активную точку с наименьшим весом.
 
-5. Перестроить локально диаграмму Вороного для соседей точки первого порядка. Деактивировать соседей (запретить их удаление).
+5. Деактивировать соседей (запретить их удаление).
 
 6. Повторять шаги 3-4 для оставшихся точек, пока не будут деактивированы все точки или пока не будет достигнут требуемый процент отбора.
 
-7. Если не достигнут требуемый процент отбора точек, активировать все точки и перейти к шагу 3. В противном случае завершить обработку
+7. Если не достигнут требуемый процент отбора точек, активировать все точки и перейти к шагу 1. В противном случае завершить обработку
 
 &lt;!-- **Ai T., Liu Y.**  *A method of point cluster simplification with spatial distribution properties preserved*, Acta Geodaetica et Cartographica Sinica, 25(1), 35–41, 2002. --&gt;
 
